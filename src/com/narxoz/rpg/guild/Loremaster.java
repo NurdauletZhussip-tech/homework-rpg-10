@@ -1,9 +1,12 @@
 package com.narxoz.rpg.guild;
-public class HistoryMaster extends GuildMember {
-    public HistoryMaster(String name, GuildMediator mediator) {
+public class Loremaster extends GuildMember {
+    public Loremaster(String name, GuildMediator mediator) {
         super(name, mediator);
     }
     public void shareFinding(String topic, String payload) {
+        getMediator().dispatch(topic, this, payload);
+    }
+    public void conductResearch(String topic, String payload) {
         getMediator().dispatch(topic, this, payload);
     }
     @Override

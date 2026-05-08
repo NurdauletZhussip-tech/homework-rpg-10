@@ -54,7 +54,7 @@ public class GuildHall implements GuildMediator {
         } else if (member instanceof Captain) {
             addSubscriber("orders", member);
             addSubscriber("tactics", member);
-        } else if (member instanceof HistoryMaster) {
+        } else if (member instanceof Loremaster) {
             addSubscriber("lore", member);
             addSubscriber("curse", member);
             addSubscriber("history", member);
