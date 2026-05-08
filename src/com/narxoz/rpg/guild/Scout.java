@@ -15,6 +15,6 @@ public class Scout extends GuildMember {
 
     @Override
     public void receive(String topic, GuildMember from, String payload) {
-        System.out.println("[Quartermaster " + getName() + "] topic=" + topic
+        System.out.println("[Scout " + getName() + "] topic=" + topic
                 + " from=" + from.getName() + " -> " + payload);    }
 }
